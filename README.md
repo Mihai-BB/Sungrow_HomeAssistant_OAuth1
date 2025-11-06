@@ -20,7 +20,7 @@ A custom Home Assistant integration that connects your **Sungrow iSolarCloud** a
 
 ### Manual Installation
 
-1. Copy the `custom_components/sungrow_isolarcloud` folder into your Home Assistant config directory:
+1. Copy the `custom_components/sungrow_isolarcloud` folder into your Home Assistant config directory. Usualy it's config/custom_components. 
 2. Restart Home Assistant.
 
 ---
