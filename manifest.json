@@ -1,0 +1,14 @@
+{
+  "domain": "sungrow_isolar",
+  "name": "Sungrow iSolar Cloud",
+  "documentation": "https://example.com",
+  "version": "1.0.0",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@mihai"],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "homeassistant": "2023.10.0",
+  "integration_icon": "/local/icons/sungrow_icon.png",
+  "icon": "mdi:solar-power-variant-outline"
+}
