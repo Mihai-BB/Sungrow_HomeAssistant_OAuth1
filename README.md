@@ -12,7 +12,8 @@ A custom Home Assistant integration that connects your **Sungrow iSolarCloud** a
 -  Automatically detects your power stations and devices  
 -  Automatic token refresh when session expires  
 -  Ready for use with Home Assistant Energy Dashboard
-
+-  Currently, the Solar Plant is configured to fetch only these Common Measuring points: 83106, 83118, 83124, 83072, 83102. In case more points are needed, edit the apy.py file and add more points in the plant_point_id_list.
+   (the const.py contains description for all of the available common measuring points).
 ---
 
 **Installation**
@@ -59,7 +60,7 @@ Depending on your Sungrow devices, the integration can provide:
 - Fully asynchronous using `aiohttp`
 - Supports automatic token refresh and retry on expired sessions
 - Written in modern Python 3.12 for compatibility with latest Home Assistant versions
-
+- Testes it with a Sungrow SH6.0-RT Inverter + SBR064 Battery and a DTSU666-20D5 Smart Meter. On all of the device, it shows common sensors
 ---
 
 **Contributing**
