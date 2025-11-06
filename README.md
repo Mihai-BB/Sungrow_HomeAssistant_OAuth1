@@ -1,0 +1,83 @@
+# Sungrow iSolarCloud Integration for Home Assistant
+
+A custom Home Assistant integration that connects your **Sungrow iSolarCloud** account to Home Assistant, allowing you to monitor **solar plant production, inverter data, and real-time device information** directly in your dashboard.
+
+---
+
+**Features**
+
+-  Login securely using your **Sungrow iSolarCloud** credentials  
+-  Supports multiple **Sungrow Cloud regions** (China, International, Europe, Australia)  
+-  Fetch real-time inverter and plant data  
+-  Automatically detects your power stations and devices  
+-  Automatic token refresh when session expires  
+-  Ready for use with Home Assistant Energy Dashboard
+
+---
+
+**Installation**
+
+### Manual Installation
+
+1. Copy the `custom_components/sungrow_isolarcloud` folder into your Home Assistant config directory:
+2. Restart Home Assistant.
+
+---
+
+**Configuration**
+You can set up the integration directly from **Home Assistant UI**:
+
+1. Go to **Settings → Devices & Services → Add Integration**
+2. Search for **Sungrow iSolarCloud**
+3. Enter your credentials and API keys:
+- `Username`
+- `Password`
+- `App Key`
+- `Secret Key`
+4. Select your **Region** from the dropdown:
+-  **China** → `https://gateway.isolarcloud.com/`
+-  **International** → `https://gateway.isolarcloud.com.hk/`
+-  **Europe** → `https://gateway.isolarcloud.eu/`
+-  **Australia** → `https://augateway.isolarcloud.com/`
+5. Click **Submit** — if login is successful, your devices will be discovered automatically.
+
+---
+
+**Data Provided**
+Depending on your Sungrow devices, the integration can provide:
+- Current power generation (W)
+- Daily energy production (kWh)
+- Lifetime energy (kWh)
+- Inverter status
+- Fault and alarm status
+- Plant summary data (voltage, current, power, etc.)
+
+---
+
+**Technical Details**
+- Uses the official **Sungrow iSolarCloud open API**
+- Fully asynchronous using `aiohttp`
+- Supports automatic token refresh and retry on expired sessions
+- Written in modern Python 3.12 for compatibility with latest Home Assistant versions
+
+---
+
+**Contributing**
+Contributions are welcome!
+Feel free to open issues or submit pull requests for:
+
+Additional sensors or metrics
+Optimizations
+UI improvements
+Localization / translation
+
+**Disclaimer**
+This integration is not officially affiliated with Sungrow. All data is retrieved using the public Sungrow iSolarCloud API.
+Use at your own risk.
+
+**Troubleshooting**
+
+If you see login or connection errors:
+- Double-check your **App Key** and **Secret Key**
+- Verify your **region selection**
+- Make sure your **Sungrow account** has access to your plant data
