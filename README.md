@@ -82,3 +82,13 @@ If you see login or connection errors:
 - Double-check your **App Key** and **Secret Key**
 - Verify your **region selection**
 - Make sure your **Sungrow account** has access to your plant data
+  
+**Screenshots**
+<img width="1292" height="871" alt="image" src="https://github.com/user-attachments/assets/606e2e50-f137-46d9-9abd-899b6ce7af3d" />
+<img width="527" height="1027" alt="image" src="https://github.com/user-attachments/assets/8ae35ad7-3bd4-4e1f-a6d4-e7ec0e3677ce" />
+<img width="534" height="1110" alt="image" src="https://github.com/user-attachments/assets/09695392-e116-45e1-905a-251eb60dff35" />
+<img width="527" height="880" alt="image" src="https://github.com/user-attachments/assets/aeb31eea-2eca-4066-907f-b27dee0fc1d5" />
+
+
+
+
