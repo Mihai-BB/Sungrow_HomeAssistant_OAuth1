@@ -30,7 +30,7 @@ async def async_setup_entry(hass: HomeAssistant, entry, async_add_entities):
     api = hass.data[DOMAIN][entry.entry_id]["api"]
 
     async def async_update_data():
-         """Fetch latest data for the plant and all devices."""
+        """Fetch latest data for the plant and all devices."""
         try:
             plant_data = await api.get_plant_data()
             device_list = await api.get_device_list()
