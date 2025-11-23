@@ -22,7 +22,7 @@ DATA_SCHEMA = vol.Schema({
 })
 
 class SungrowConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-     """Handle the configuration flow for the Sungrow iSolarCloud integration."""
+    """Handle the configuration flow for the Sungrow iSolarCloud integration."""
     VERSION = 1
 
     async def async_step_user(self, user_input=None):
